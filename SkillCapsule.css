@@ -1,0 +1,43 @@
+/* This css is primarily used to handle coloring for skill coloring only */
+
+.html {
+  background-color: #e34f26;
+  color: #ffffff;
+}
+.css {
+  background-color: #1572b6;
+  color: #ffffff;
+}
+.javascript {
+  background-color: #f7df1e;
+  color: #222831;
+}
+.csharp {
+  background-color: #6c8ebf;
+  color: #ffffff;
+}
+.cpp {
+  background-color: #00599c;
+  color: #ffffff;
+}
+.unity-2d {
+  background-color: #100c08;
+  color: #ffffff;
+}
+.unity-3d {
+  background-color: #003a70;
+  color: #ffffff;
+}
+.modeling {
+  background-color: #d3d3d3;
+  color: #222831;
+}
+
+.capsule {
+  border-radius: 20px;
+  padding: 10px 20px;
+  margin: 5px;
+  display: inline-block;
+  font-family: Arial, sans-serif;
+  text-align: center;
+}

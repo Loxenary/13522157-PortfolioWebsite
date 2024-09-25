@@ -1,31 +1,110 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="Stylesheet.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Fonts -->
+
     <title>Portfolio</title>
-</head>
-<body>
-    <header>
-        <div class="logo"></div>
-        <section class="links">
-            <ul class="linker">
-                <li>about</li>
-                <li>portfolio</li>
-                <li>contact</li>
-            </ul>
-            <ul class="socialmedia">
-                <img src="" alt="instagram-logo">
-                <img src="" alt="github-logo">
-                <img src="" alt="linkedin-logo">
-            </ul>
-        </section>
-        
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inria+Serif:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kufam:ital,wght@0,400..900;1,400..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- All Css Files -->
+    <link rel="stylesheet" href="Stylesheet.css" />
+    <link rel="stylesheet" href="laptop.css" />
+    <link rel="stylesheet" href="mobile.css" />
+    <link rel="stylesheet" href="tablet.css" />
+    <link rel="stylesheet" href="SkillCapsule.css" />
+  </head>
+  <body>
+    <nav>
+      <div class="logo">
+        <img src="./Images/stone_logo.jpg" alt="" class="logo-img" />
+        <h3>My Portfolio</h3>
+      </div>
+      <!-- Burger Icon for hidden Checkbox when in mobile form -->
+      <input type="checkbox" name="" id="burger-toggle" class="burger-toggle" />
+      <label for="burger-toggle" class="burger-icon">
+        <div></div>
+        <div></div>
+        <div></div>
+      </label>
+      <ul class="linker">
+        <li><a href="#Home">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Projects</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+    <header id="Home">
+      <!-- The least background  -->
+      <img
+        src="./Images/header-bg.png"
+        alt="Header Background"
+        class="headerbg"
+      />
+      <div class="introduction">
+        <h1>HEY, I’M DAVE</h1>
+        <h3>
+          A Game Developer and a Web Developer focusing on Frontend that leads
+          to success of the overall product
+        </h3>
+      </div>
     </header>
     <main>
-        <section></section>
+      <section id="About">
+        <div class="About-header">
+          <h1 class="About-title">About Me</h1>
+          <div class="About-decorator"></div>
+          <p>
+            Here you can find lots of information about me, What i do, and my
+            current skills mostly in terms of programming and technology
+          </p>
+        </div>
+
+        <h2>Get to know me!</h2>
+        <br />
+        <p>
+          I am a dedicated <b>Frontend Web Developer</b> specializing in
+          building and managing the frontend of websites and web applications.
+          My work focuses on creating seamless user experiences that contribute
+          to the overall success of the product. Feel free to explore my
+          projects in the <a href="#Projects">Projects</a> section.<br />
+
+          In addition to my frontend development skills, I am also an
+          enthusiastic <b>Game Developer</b> experienced in both Unity 3D and
+          2D. I have a passion for crafting engaging action platforming games
+          that deliver fun and excitement to players. <br />
+          If you're interested in connecting, I invite you to follow me on
+          <a href="">LinkedIn</a> and <a href="">Instagram</a>, where I share
+          insights into my daily life and professional journey.
+        </p>
+
+        <h2>My Skills</h2>
+        <div>
+          <div class="capsule html">HTML</div>
+          <div class="capsule css">CSS</div>
+          <div class="capsule javascript">JavaScript</div>
+          <div class="capsule csharp">C#</div>
+          <div class="capsule cpp">C++</div>
+          <div class="capsule unity-2d">Unity 2D</div>
+          <div class="capsule unity-3d">Unity 3D</div>
+          <div class="capsule modeling">3D Modeling</div>
+        </div>
+      </section>
+      <section id="Projects"></section>
     </main>
-    <footer></footer>
-</body>
+
+    <footer id="Contact"></footer>
+  </body>
 </html>
