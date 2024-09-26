@@ -6,6 +6,7 @@
   --primary-blue: #00adb5;
   --primary-white: #eeeeee;
   --secondary-gray: rgba(34, 40, 49, 95%);
+  --secondary-blue: rgba(0, 173, 181, 30%);
 }
 
 body {
@@ -30,6 +31,11 @@ nav {
   padding-top: 10px;
   width: 100%;
   position: sticky;
+  top: 0;
+  transition: background-color 0.3s ease, padding 0.3s ease,
+    box-shadow 0.3s ease;
+  z-index: 10;
+  box-shadow: 0 4px 8px var(--secondary-blue);
 }
 
 .linker {
@@ -185,7 +191,7 @@ header h3 {
 
 /* Footer */
 
-footer{
+footer {
   padding: 130px;
 }
 
@@ -194,7 +200,6 @@ footer{
   justify-content: space-between;
   font-family: "Inria-Sans";
   margin: 0 0 100px 0;
-
 }
 
 .footer-container h1 {
@@ -220,15 +225,13 @@ footer{
 }
 
 .footer-line {
-  
   width: 100%;
-  
+
   background-color: black;
   height: 2px;
 }
 
-
-.footer-identity{
+.footer-identity {
   display: flex;
   flex-direction: column;
   gap: 5px;
