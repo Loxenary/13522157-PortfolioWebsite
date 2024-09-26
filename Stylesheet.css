@@ -24,7 +24,7 @@ nav {
   color: var(--primary-white);
   font-weight: bold;
   justify-content: space-between;
-  font-family: "Inria Serif", serif;
+  font-family: "Inria-Serif";
   display: flex;
   padding-bottom: 10px;
   padding-top: 10px;
@@ -106,22 +106,28 @@ header h3 {
 
 /* About me */
 #About {
-  background-color: var(--primary-black);
+  background-color: var(--secondary-gray);
   color: var(--primary-white);
+  padding-left: 77px;
+  padding-right: 77px;
+  padding-bottom: 80px;
 }
 
 .About-title {
   font-family: "Kufam";
   font-weight: bold;
+  font-size: 3rem;
+  letter-spacing: 0.2em;
 }
 
 .About-decorator {
   background-color: var(--primary-blue);
   width: 87px;
+  border-radius: 20px;
   height: 10px;
 }
 
-.About-header {
+.title-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -129,10 +135,103 @@ header h3 {
   text-align: center;
 }
 
+.explanation-container {
+  width: 700px;
+  height: fit;
+}
+
+.title-container p {
+  padding-top: 10px;
+}
+
+.about-container h2 {
+  font-family: "Kufam";
+  font-weight: bold;
+  font-size: 2rem;
+  padding-bottom: 5px;
+}
+
+.explanation-container a {
+  color: var(--primary-blue);
+}
+
 #About p {
   font-family: "Inria Sans";
-  font-size: 36px;
+  font-size: 24px;
   font-weight: lighter;
 }
 
+.capsule-container {
+  width: 700px;
+}
+
 /* End of About Me */
+
+/* Projects */
+
+#Projects {
+  background-color: var(--primary-black);
+  color: var(--primary-white);
+  padding-bottom: 120px;
+}
+
+#Projects p {
+  font-family: "Inria Sans";
+  font-size: 24px;
+  font-weight: lighter;
+}
+
+/* End of projects */
+
+/* Footer */
+
+footer{
+  padding: 130px;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  font-family: "Inria-Sans";
+  margin: 0 0 100px 0;
+
+}
+
+.footer-container h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.footer-container p {
+  font-size: 1rem;
+  font-weight: lighter;
+}
+
+.social-media-container {
+  font-size: 2rem;
+  justify-content: left;
+}
+
+.social-media-logos {
+  display: flex;
+  gap: 23px;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.footer-line {
+  
+  width: 100%;
+  
+  background-color: black;
+  height: 2px;
+}
+
+
+.footer-identity{
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+/* End of Footer */

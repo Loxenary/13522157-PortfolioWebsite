@@ -25,6 +25,7 @@
     <link rel="stylesheet" href="mobile.css" />
     <link rel="stylesheet" href="tablet.css" />
     <link rel="stylesheet" href="SkillCapsule.css" />
+    <link rel="stylesheet" href="Projects.css" />
   </head>
   <body>
     <nav>
@@ -41,9 +42,9 @@
       </label>
       <ul class="linker">
         <li><a href="#Home">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Projects</a></li>
-        <li><a href="#">Contact</a></li>
+        <li><a href="#About">About</a></li>
+        <li><a href="#Projects">Projects</a></li>
+        <li><a href="#Contact">Contact</a></li>
       </ul>
     </nav>
     <header id="Home">
@@ -63,48 +64,107 @@
     </header>
     <main>
       <section id="About">
-        <div class="About-header">
-          <h1 class="About-title">About Me</h1>
+        <div class="title-container">
+          <h1 class="About-title">ABOUT ME</h1>
           <div class="About-decorator"></div>
           <p>
             Here you can find lots of information about me, What i do, and my
             current skills mostly in terms of programming and technology
           </p>
         </div>
-
-        <h2>Get to know me!</h2>
         <br />
-        <p>
-          I am a dedicated <b>Frontend Web Developer</b> specializing in
-          building and managing the frontend of websites and web applications.
-          My work focuses on creating seamless user experiences that contribute
-          to the overall success of the product. Feel free to explore my
-          projects in the <a href="#Projects">Projects</a> section.<br />
+        <div class="about-container">
+          <h2>Get to know me!</h2>
+          <div class="explanation-container">
+            <p>
+              I am a dedicated <b>Frontend Web Developer</b> specializing in
+              building and managing the frontend of websites and web
+              applications. My work focuses on creating seamless user
+              experiences that contribute to the overall success of the product.
+              Feel free to explore my projects in the
+              <a href="#Projects">Projects</a> section.<br />
 
-          In addition to my frontend development skills, I am also an
-          enthusiastic <b>Game Developer</b> experienced in both Unity 3D and
-          2D. I have a passion for crafting engaging action platforming games
-          that deliver fun and excitement to players. <br />
-          If you're interested in connecting, I invite you to follow me on
-          <a href="">LinkedIn</a> and <a href="">Instagram</a>, where I share
-          insights into my daily life and professional journey.
-        </p>
-
-        <h2>My Skills</h2>
-        <div>
-          <div class="capsule html">HTML</div>
-          <div class="capsule css">CSS</div>
-          <div class="capsule javascript">JavaScript</div>
-          <div class="capsule csharp">C#</div>
-          <div class="capsule cpp">C++</div>
-          <div class="capsule unity-2d">Unity 2D</div>
-          <div class="capsule unity-3d">Unity 3D</div>
-          <div class="capsule modeling">3D Modeling</div>
+              In addition to my frontend development skills, I am also an
+              enthusiastic <b>Game Developer</b> experienced in both Unity 3D
+              and 2D. I have a passion for crafting engaging action platforming
+              games that deliver fun and excitement to players. <br />
+              If you're interested in connecting, I invite you to follow me on
+              <a href="">LinkedIn</a> and <a href="">Instagram</a>, where I
+              share insights into my daily life and professional journey.
+            </p>
+          </div>
+          <br />
+          <h2>My Skills</h2>
+          <div class="capsule-container">
+            <div class="capsule html">HTML</div>
+            <div class="capsule css">CSS</div>
+            <div class="capsule javascript">JavaScript</div>
+            <div class="capsule csharp">C#</div>
+            <div class="capsule cpp">C++</div>
+            <div class="capsule unity-2d">Unity 2D</div>
+            <div class="capsule unity-3d">Unity 3D</div>
+            <div class="capsule modeling">3D Modeling</div>
+          </div>
         </div>
       </section>
-      <section id="Projects"></section>
+      <section id="Projects">
+        <div class="title-container">
+          <h1 class="About-title">PROJECTS</h1>
+          <div class="About-decorator"></div>
+          <p>
+            Here you will find some of my personal projects that I created with
+            each project containing its own case study
+          </p>
+        </div>
+        <div class="main-project-container">
+          <div class="project-container">
+            <div class="project-image"></div>
+            <h1 class="project-title">PROJECT #1</h1>
+            <p class="project-detail">
+              Dopefolio is a successful Open-Source project that I created which
+              have been featured on some of the biggest tech sites like
+              CSS-Tricks, Hostinger, etc & used by thousands of developers
+              globally
+            </p>
+          </div>
+          <div class="project-container">
+            <div class="project-image"></div>
+            <h1 class="project-title">PROJECT #2</h1>
+            <p class="project-detail">
+              Dopefolio is a successful Open-Source project that I created which
+              have been featured on some of the biggest tech sites like
+              CSS-Tricks, Hostinger, etc & used by thousands of developers
+              globally
+            </p>
+          </div>
+        </div>
+      </section>
     </main>
-
-    <footer id="Contact"></footer>
+    <footer id="Contact">
+      <div class="footer-container">
+        <div class=footer-identity>
+          <h1>Muhammad Davis Adhipramana</h1>
+          <p>
+            A Game Developer and a Web Developer focusing on Frontend that leads
+            to success of the overall product
+          </p>
+        </div>
+        <div class="social-media-container">
+          <h1>SOCIAL</h1>
+          <div class="social-media-logos">
+            <a href="">
+              <img src="./Images/instagram.svg" alt="Instagram Logo" />
+            </a>
+            <a href="">
+              <img src="./Images/linkedin.svg" alt="Linkedin Logo" />
+            </a>
+            <a href="">
+              <img src="./Images/github.svg" alt="Github Logo" />
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-line"></div>
+    </footer>
   </body>
 </html>

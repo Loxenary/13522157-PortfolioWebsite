@@ -18,8 +18,13 @@
     gap: 40px;
   }
 
+  .linker a{
+    font-size: xx-large;
+  }
+
+
   nav {
-    font-size: x-large;
+    font-size: xx-large;
   }
 
   header h1 {
