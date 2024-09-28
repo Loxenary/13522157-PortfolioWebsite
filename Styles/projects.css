@@ -66,14 +66,14 @@
   transition: transform 0.3s ease, color 0.3s ease;
 }
 
-.project-text{
+.project-text {
   overflow-y: scroll;
   overflow-x: hidden;
 
   scrollbar-width: none;
 }
 
-.project-text::-webkit-scrollbar{
+.project-text::-webkit-scrollbar {
   display: none;
 }
 
@@ -95,7 +95,7 @@
     height: auto;
   }
 
-  .project-text{
+  .project-text {
     height: 350px;
   }
 
@@ -144,7 +144,6 @@
     text-align: center;
     align-items: center;
     width: 100%;
-    overflow: scroll;
   }
   .project-link {
     padding: 20px 40px;
@@ -191,7 +190,6 @@
     align-items: center;
     justify-content: center;
     text-align: center;
-    overflow: scroll;
   }
 
   .project-image {
