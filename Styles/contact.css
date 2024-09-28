@@ -1,0 +1,154 @@
+.footer-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-family: "Inria-Sans";
+}
+
+.social-media-logos {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.social-media-logos svg {
+  fill: var(--primary-white);
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.social-media-logos svg:hover {
+  fill: var(--primary-blue);
+  position: relative;
+}
+
+
+.footer-line {
+  width: 100%;
+  background-color: black;
+  height: 1px;
+}
+
+.footer-identity {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+footer {
+  background-color: var(--secondary-gray);
+  color: var(--primary-white);
+}
+
+/* Laptop */
+
+@media (min-width: 1024px) {
+  .footer-container {
+    gap: 80px;
+  }
+
+  .footer-container h1 {
+    font-size: 3rem;
+    font-weight: bold;
+  }
+
+  .footer-container p {
+    font-size: 1.5rem;
+    font-weight: normal;
+  }
+
+  .social-media-container {
+    font-size: 2rem;
+    justify-content: left;
+  }
+
+  .social-media-logos {
+    gap: 20px;
+  }
+
+  .social-media-logos svg {
+    height: 84px;
+    width: 84px;
+  }
+
+  footer {
+    padding: 85px;
+  }
+}
+
+/* Tablet */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .footer-container {
+    gap: 40px;
+  }
+
+  .footer-container h1 {
+    font-size: xx-large;
+    font-weight: bold;
+  }
+
+  .footer-container p {
+    font-size: large;
+    font-weight: normal;
+  }
+
+  .social-media-container {
+    justify-content: left;
+  }
+
+  .social-media-logos svg {
+    height: 48px;
+    width: 48px;
+  }
+
+  .social-media-logos {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .footer-line {
+    margin-top: 10px;
+  }
+
+  footer {
+    padding: 40px;
+  }
+}
+
+/* Phone */
+@media (max-width: 767px) {
+  .footer-container {
+    gap: 40px;
+  }
+
+  .footer-container h1 {
+    font-size: medium;
+    font-weight: bold;
+  }
+
+  .footer-container p {
+    font-size: small;
+    font-weight: normal;
+  }
+
+  .social-media-container {
+    justify-content: left;
+  }
+
+  .social-media-logos svg {
+    height: 32px;
+    width: 32px;
+  }
+
+  .social-media-logos {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .footer-line {
+    margin-top: 10px;
+  }
+
+  footer {
+    padding: 20px;
+  }
+}

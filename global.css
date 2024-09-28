@@ -1,0 +1,13 @@
+/* General */
+
+:root {
+  --primary-black: #222831;
+  --primary-gray: #393e46;
+  --primary-blue: #00adb5;
+  --primary-white: #eeeeee;
+  --secondary-gray: rgba(34, 40, 49, 95%);
+  --secondary-blue: rgba(0, 173, 181, 30%);
+  --secondary-white: #f1f3f7;
+}
+
+/* End of General */

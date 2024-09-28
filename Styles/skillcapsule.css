@@ -1,11 +1,11 @@
 /* This css is primarily used to handle coloring for skill coloring only */
 
 .html {
-  background-color: #e34f26;
+  background-color: #75250f;
   color: #ffffff;
 }
 .css {
-  background-color: #1572b6;
+  background-color: #0d456e;
   color: #ffffff;
 }
 .javascript {
@@ -13,7 +13,7 @@
   color: #222831;
 }
 .csharp {
-  background-color: #6c8ebf;
+  background-color: #2C4363;
   color: #ffffff;
 }
 .cpp {
@@ -35,11 +35,34 @@
 
 .capsule {
   border-radius: 20px;
-  padding: 10px 20px;
   margin: 5px;
   display: inline-block;
   font-family: "Kufam";
   font-weight: bold;
-  font-size: large;
   text-align: center;
+}
+
+/* Laptop */
+@media (min-width: 1024px) {
+  .capsule {
+    padding: 18px 24px;
+    font-size: x-large;
+    margin: 10px;
+  }
+}
+
+/* Tablet */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .capsule {
+    padding: 10px 20px;
+    font-size: 20px;
+  }
+}
+
+/* Phone */
+@media (max-width: 767px) {
+  .capsule {
+    padding: 5px 15px;
+    font-size: medium;
+  }
 }
