@@ -14,7 +14,7 @@
   flex-direction: column;
   justify-content: center;
   width: 100%;
-  height: fit-content;
+  max-height: fit-content;
   margin-top: 80px;
   gap: 40px;
 }
@@ -87,7 +87,8 @@
   }
 
   .project-container {
-    height: 500px;
+    min-height: 500px;
+    max-height: max-content;
   }
 
   .project-image {
@@ -135,7 +136,8 @@
   .project-container {
     flex-direction: column;
     padding: 40px 20px;
-    height: 480px;
+    min-height: 480px;
+    max-height: max-content;
   }
   .project-detail-container {
     display: flex;
@@ -176,7 +178,8 @@
     flex-direction: column;
     padding: 20px 10px;
     gap: 20px;
-    height: 320px;
+    min-height: 320px;
+    max-height: max-content;
   }
 
   .project-link {
