@@ -1,0 +1,159 @@
+/* General */
+#About {
+  background-color: var(--secondary-gray);
+  color: var(--primary-white);
+}
+
+#About p {
+  font-family: "Inria Serif";
+  font-size: 24px;
+  font-weight: lighter;
+}
+
+.About-title {
+  font-family: "Kufam";
+  font-weight: bold;
+  font-size: 3rem;
+  letter-spacing: 0.2em;
+}
+
+.title-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.About-decorator {
+  background-color: var(--primary-blue);
+  width: 87px;
+  border-radius: 20px;
+  height: 10px;
+  padding-bottom: 10px;
+}
+
+.about-container h2 {
+  display: flex;
+  font-family: "Kufam";
+  font-weight: bold;
+  font-size: 2rem;
+  padding-bottom: 5px;
+}
+
+.explanation-container {
+  width: auto;
+  height: fit;
+}
+
+.explanation-container br {
+  height: 30px;
+}
+
+.explanation-container a {
+  color: var(--secondary-blue);
+  text-decoration: none;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.explanation-container a:hover {
+  color: var(--primary-blue);
+  position: relative;
+}
+
+.explanation-container a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 2px;
+  width: 100%;
+  background: var(--secondary-blue);
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+}
+
+.explanation-container a:hover::after {
+  transform: scaleX(1);
+}
+
+/* Laptop */
+
+@media (min-width: 1024px) {
+  #About {
+    padding: 0px 48px 80px 48px;
+  }
+
+  #About p {
+    font-size: 30px;
+    font-weight: normal;
+    letter-spacing: 2px;
+  }
+
+  .about-container h2 {
+    font-size: 40px;
+  }
+
+  .About-title {
+    font-size: 52px;
+  }
+
+  .about-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    gap: 30px;
+  }
+
+  .about-container > div {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+  }
+}
+
+/* Tablet */
+@media (min-width: 768px) and (max-width: 1023px) {
+  #About p {
+    font-size: 28px;
+    font-weight: lighter;
+  }
+
+  .about-container h2 {
+    font-size: 32px;
+  }
+
+  #About {
+    padding: 40px;
+  }
+
+  .about-container {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+}
+
+/* Phone */
+@media (max-width: 767px) {
+  #About p {
+    font-size: 20px;
+    font-weight: normal;
+  }
+
+  #About {
+    padding: 40px;
+  }
+
+  .About-title {
+    font-size: 28px;
+  }
+
+  .about-container h2 {
+    font-size: 24px;
+  }
+
+  .About-decorator {
+    height: 1px;
+  }
+}

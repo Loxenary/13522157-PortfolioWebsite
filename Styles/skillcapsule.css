@@ -1,0 +1,68 @@
+/* This css is primarily used to handle coloring for skill coloring only */
+
+.html {
+  background-color: #75250f;
+  color: #ffffff;
+}
+.css {
+  background-color: #0d456e;
+  color: #ffffff;
+}
+.javascript {
+  background-color: #f7df1e;
+  color: #222831;
+}
+.csharp {
+  background-color: #2C4363;
+  color: #ffffff;
+}
+.cpp {
+  background-color: #00599c;
+  color: #ffffff;
+}
+.unity-2d {
+  background-color: #100c08;
+  color: #ffffff;
+}
+.unity-3d {
+  background-color: #003a70;
+  color: #ffffff;
+}
+.modeling {
+  background-color: #d3d3d3;
+  color: #222831;
+}
+
+.capsule {
+  border-radius: 20px;
+  margin: 5px;
+  display: inline-block;
+  font-family: "Kufam";
+  font-weight: bold;
+  text-align: center;
+}
+
+/* Laptop */
+@media (min-width: 1024px) {
+  .capsule {
+    padding: 18px 24px;
+    font-size: x-large;
+    margin: 10px;
+  }
+}
+
+/* Tablet */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .capsule {
+    padding: 10px 20px;
+    font-size: 20px;
+  }
+}
+
+/* Phone */
+@media (max-width: 767px) {
+  .capsule {
+    padding: 5px 15px;
+    font-size: medium;
+  }
+}

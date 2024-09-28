@@ -1,0 +1,162 @@
+#Projects {
+  background-color: var(--primary-black);
+  color: var(--primary-white);
+}
+
+#Projects p {
+  font-family: "Inria Sans";
+  font-size: 24px;
+  font-weight: lighter;
+}
+
+.main-project-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  height: fit-content;
+  margin-top: 80px;
+  gap: 40px;
+}
+
+.project-container {
+  display: flex;
+  justify-content: column;
+  align-items: center;
+  gap: 20px;
+
+  border: solid;
+  border-color: var(--secondary-blue);
+  border-width: 2px;
+  background-color: var(--primary-gray);
+  border-radius: 30px;
+}
+
+.project-image {
+  border-radius: 20px;
+}
+
+.project-detail-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.project-title {
+  font-size: clamp(10px, 2vw, 100px);
+  font-family: "Kufam";
+  font-weight: bold;
+  margin-bottom: 0;
+}
+
+.project-detail {
+  font-size: 16px;
+  font-family: "Inria-Sans";
+  font-weight: lighter;
+}
+
+@media (min-width: 1024px) {
+  #Projects {
+    padding: 0 40px 120px 40px;
+  }
+
+  .project-container{
+    height: 500px;
+  }
+
+  .project-image {
+    width: 320px;
+    height: auto;
+  }
+
+  .project-container {
+    padding: 0 80px;
+    flex-direction: row;
+    justify-content: left;
+    gap: 80px;
+  }
+
+  #Projects p {
+    font-family: "Inria Sans";
+    font-size: clamp(28px, 32px, 36px);
+  }
+
+  .project-detail-container h1{
+    font-size: 40px;
+  }
+
+  .project-detail{
+    width: 100%;
+    display: block;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  #Projects {
+    padding: 40px 40px 120px 40px;
+    
+  }
+  .project-container {
+    flex-direction: column;
+    padding: 40px 20px;
+    height: 480px;
+  }
+  .project-detail-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    width: 100%;
+    overflow: scroll;
+  }
+
+  .project-image {
+    max-width: auto;
+    height: 240px;
+  }
+  .project-detail-container h1 {
+    font-size: 32px;
+  }
+
+  #Projects p {
+    font-family: "Inria Sans";
+    font-size: clamp(20px, 28px, 32px);
+    font-weight: lighter;
+  }
+}
+
+@media (max-width: 767px) {
+  .main-project-container {
+    margin-top: 40px;
+  }
+  #Projects {
+    padding: 40px;
+  }
+  .project-container {
+    flex-direction: column;
+    padding: 20px 10px;
+    gap: 20px;
+    height: 320px;
+
+  }
+
+  .project-detail-container{
+    text-align: center;
+    overflow: scroll;
+  }
+
+  .project-image {
+    width: auto;
+    height: 150px;
+  }
+  #Projects p {
+    font-family: "Inria Sans";
+    font-size: 18px;
+    font-weight: lighter;
+  }
+
+  #Projects h1 {
+    font-size: 24px;
+  }
+}
