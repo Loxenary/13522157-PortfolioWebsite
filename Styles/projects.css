@@ -60,7 +60,7 @@
     padding: 0 40px 120px 40px;
   }
 
-  .project-container{
+  .project-container {
     height: 500px;
   }
 
@@ -81,11 +81,11 @@
     font-size: clamp(28px, 32px, 36px);
   }
 
-  .project-detail-container h1{
+  .project-detail-container h1 {
     font-size: 40px;
   }
 
-  .project-detail{
+  .project-detail {
     width: 100%;
     display: block;
   }
@@ -94,7 +94,6 @@
 @media (min-width: 768px) and (max-width: 1023px) {
   #Projects {
     padding: 40px 40px 120px 40px;
-    
   }
   .project-container {
     flex-direction: column;
@@ -138,17 +137,16 @@
     padding: 20px 10px;
     gap: 20px;
     height: 320px;
-
   }
 
-  .project-detail-container{
+  .project-detail-container {
     text-align: center;
     overflow: scroll;
   }
 
   .project-image {
-    width: auto;
-    height: 150px;
+    width: 150px;
+    height: auto;
   }
   #Projects p {
     font-family: "Inria Sans";

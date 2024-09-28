@@ -10,4 +10,8 @@
   --secondary-white: #f1f3f7;
 }
 
+ul {
+  list-style-type: none;
+}
+
 /* End of General */
